@@ -146,7 +146,7 @@ function BingoGrid() {
 
 			if (navigator.canShare && navigator.canShare({ files: [file] })) {
 				await navigator.share({
-					title: "Mon NecroBingo",
+					title: "Mon NecroLoto",
 					text: "Voici ma grille !",
 					files: [file],
 				});
@@ -186,7 +186,7 @@ function BingoGrid() {
 			<div className='bingoGrid' ref={gridRef}>
 				{/* Tampon visible + exporté */}
 				<div className='bingoStamp'>
-					NecroBingo •{" "}
+					NecroLoto •{" "}
 					{new Date(lastUpdatedAt).toLocaleString("fr-FR", {
 						day: "2-digit",
 						month: "2-digit",

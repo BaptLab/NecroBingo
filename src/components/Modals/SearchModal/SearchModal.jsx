@@ -20,7 +20,7 @@ const SearchModal = ({ isOpen, onClose, onSelect }) => {
 					className='modalInput'
 					value={query}
 					onChange={(e) => setQuery(e.target.value)}
-					placeholder='Tape un nom (ex: melenchon)…'
+					placeholder='Tape un nom (ex: darmanin)…'
 					autoFocus
 				/>
 

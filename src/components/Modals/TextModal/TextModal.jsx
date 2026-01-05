@@ -16,7 +16,7 @@ function TextModal({ isOpen, onClose }) {
 				<div className='rulesContent'>
 					{" "}
 					<p>
-						<strong>NecroBingo</strong> est un jeu de pari morbide
+						<strong>NecroLoto</strong> est un jeu de pari morbide
 						mais stratégique. Tu remplis ta grille avec des
 						personnalités vivantes… puis tu attends.
 					</p>
