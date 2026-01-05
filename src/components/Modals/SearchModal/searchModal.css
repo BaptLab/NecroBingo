@@ -1,0 +1,90 @@
+.modalOverlay {
+	position: fixed;
+	inset: 0;
+
+	background: rgba(0, 0, 0, 0.55);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	z-index: 1000; /* 🔑 clé */
+}
+
+.modalCard {
+	position: relative;
+	z-index: 1001;
+
+	width: min(520px, 100%);
+	background: #111;
+	color: white;
+
+	border-radius: 12px;
+	padding: 12px;
+}
+
+.modalHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.modalHeader button {
+	cursor: pointer;
+}
+
+.modalInput {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #333;
+	background: #0b0b0b;
+	color: #fff;
+}
+
+.results {
+	margin-top: 12px;
+	display: grid;
+	gap: 8px;
+}
+
+.resultItem {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #222;
+	background: #0f0f0f;
+	color: #fff;
+	cursor: pointer;
+	text-align: left;
+}
+
+.resultImg {
+	width: 36px;
+	height: 36px;
+	border-radius: 999px;
+	object-fit: cover;
+}
+
+.empty {
+	opacity: 0.7;
+	padding: 10px;
+}
+
+.resultItem.dead {
+	opacity: 0.45;
+	cursor: not-allowed;
+}
+
+.resultItem.dead:hover {
+	background: inherit;
+}
+
+.resultItem:disabled {
+	pointer-events: none;
+}

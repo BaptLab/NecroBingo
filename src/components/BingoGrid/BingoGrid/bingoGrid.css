@@ -1,0 +1,66 @@
+.bingoGrid {
+	height: 600px;
+	width: 600px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 8px;
+	position: relative;
+}
+
+.gridActions {
+	margin-top: 16px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gridButton {
+	margin: 20px auto 0;
+	display: block;
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.resetGridButton {
+	background: #b00020;
+}
+
+.exportGridButton {
+	background: #13c456;
+}
+
+.downloadGridButton {
+	background: #af5316;
+}
+
+.rulesGridButton {
+	background: #000000;
+}
+.gridButton:hover {
+	opacity: 0.9;
+}
+/* Tampon en haut, visible écran + export */
+.bingoStamp {
+	position: absolute;
+	right: 0;
+
+	z-index: 5;
+
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.4px;
+
+	color: rgba(255, 255, 255, 0.92);
+	background: rgba(0, 0, 0, 0.55);
+
+	padding: 6px 12px;
+	border-radius: 12px;
+
+	pointer-events: none;
+}
