@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
 import BingoCell from "../BingoCell/BingoCell";
-import SearchModal from "../../Modals/SearchModal/SearchModal";
-import ConfirmModal from "../../Modals/ConfirmModal/ConfirmModal";
-import TextModal from "../../Modals/textModal/TextModal";
+import SearchModal from "../../Modals/SearchModal/SearchModal.jsx";
+import ConfirmModal from "../../Modals/ConfirmModal/ConfirmModal.jsx";
+import TextModal from "../../Modals/TextModal/TextModal.jsx";
 
 /* =====================
    Helpers / constants
