@@ -11,6 +11,7 @@ import TextModal from "../../Modals/TextModal/TextModal.jsx";
 /* =====================
    Helpers / constants
 ===================== */
+const DEFAULT_AVATAR = `${import.meta.env.BASE_URL}defaultAvatar.webp`;
 
 const STORAGE_KEY = "necroBingo.cells.v1";
 const getNowISO = () => new Date().toISOString();
@@ -213,9 +214,7 @@ function BingoGrid() {
 						<BingoCell
 							key={cell.id}
 							text={isEmpty ? "Cliquer pour choisir" : celeb.name}
-							imageUrl={
-								isEmpty ? "/defaultAvatar.webp" : celeb.imageUrl
-							}
+							imageUrl={isEmpty ? DEFAULT_AVATAR : celeb.imageUrl}
 							isUnder60={isUnder60}
 							isOver85={isOver85}
 							onClick={() => handleCellClick(cell.id)}
